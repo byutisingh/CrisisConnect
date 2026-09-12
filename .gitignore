@@ -1,0 +1,11 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+*.swp
+*.swo
+node_modules/
+dist/
+build/
+coverage/

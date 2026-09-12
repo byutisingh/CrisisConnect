@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CrisisConnect helps communities coordinate emergency support, check-ins, and local safety updates.">
+  <title>CrisisConnect — Community safety, connected</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#overview" aria-label="CrisisConnect home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>Crisis<span>Connect</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#overview" class="nav-link active">Overview</a>
+        <a href="#incidents" class="nav-link">Incidents</a>
+        <a href="#contacts" class="nav-link">Contacts</a>
+        <a href="#resources" class="nav-link">Resources</a>
+      </nav>
+      <div class="topbar-actions">
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 15.3A8.7 8.7 0 0 1 8.7 3.2 8.7 8.7 0 1 0 20.8 15.3Z"></path></svg>
+        </button>
+        <button class="avatar-button" id="profile-button" type="button" aria-label="Open profile menu">AM</button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section-pad" id="overview">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse-dot"></span> A calmer way to respond</div>
+          <h1>When emergencies move fast, <em>your community moves together.</em></h1>
+          <p class="hero-subtitle">CrisisConnect brings urgent help, trusted contacts, and local awareness into one calm response layer—so no one has to figure out what to do alone.</p>
+          <div class="hero-actions">
+            <button class="button button-primary" id="hero-sos" type="button"><span class="sos-mini">SOS</span> Send emergency alert</button>
+            <a class="button button-ghost" href="#incidents">View community activity <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="trust-row"><span class="avatars" aria-hidden="true"><i>JL</i><i>RK</i><i>MS</i><i>+</i></span><span><strong>2,481</strong> neighbors connected today</span><span class="trust-divider"></span><span class="secure-label">Private by design <span aria-hidden="true">↗</span></span></div>
+        </div>
+        <div class="hero-visual" aria-label="Network status: all systems operational">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="map-card">
+            <div class="map-grid"></div>
+            <div class="map-label label-a">North District <small>12 online</small></div>
+            <div class="map-label label-b">Harbor Point <small>8 online</small></div>
+            <div class="map-label label-c">Cedar Grove <small>24 online</small></div>
+            <div class="map-route"></div>
+            <div class="map-pin pin-a"><span></span></div><div class="map-pin pin-b"><span></span></div><div class="map-pin pin-c"><span></span></div>
+            <div class="map-status"><span class="status-dot"></span><span><strong>Network active</strong><small>All systems operational</small></span><span class="signal-bars"><i></i><i></i><i></i><i></i></span></div>
+          </div>
+          <div class="floating-card floating-alert"><span class="float-icon">✓</span><span><strong>Check-in confirmed</strong><small>Trusted circle notified</small></span></div>
+          <div class="floating-card floating-help"><span class="float-icon orange">♡</span><span><strong>Help coordinated</strong><small>0.4 mi away · 3 responders</small></span></div>
+        </div>
+      </section>
+
+      <section class="stats-grid section-pad" aria-label="Community statistics">
+        <div class="stat-card"><span class="stat-icon icon-orange">↗</span><span class="stat-value">98.4%</span><span class="stat-label">Response readiness</span><span class="stat-trend">↑ 4.2% this week</span></div>
+        <div class="stat-card"><span class="stat-icon icon-teal">◉</span><span class="stat-value">1,204</span><span class="stat-label">Active neighbors</span><span class="stat-trend">↑ 12% this month</span></div>
+        <div class="stat-card"><span class="stat-icon icon-blue">⌁</span><span class="stat-value">04:32</span><span class="stat-label">Avg. response time</span><span class="stat-trend">↓ 18s faster</span></div>
+        <div class="stat-card"><span class="stat-icon icon-purple">♧</span><span class="stat-value">24/7</span><span class="stat-label">Support coverage</span><span class="stat-trend">Always on</span></div>
+      </section>
+
+      <section class="status-strip section-pad" aria-label="Live emergency network status">
+        <div class="status-strip-copy"><span class="section-kicker">Live network</span><h2>Calm is a capability.</h2><p>Every signal is being monitored by your trusted circle.</p></div>
+        <div class="network-beacon"><span class="beacon-core"></span><span class="beacon-ring ring-a"></span><span class="beacon-ring ring-b"></span></div>
+        <div class="status-metrics"><span><i class="indicator-dot"></i><strong>Operational</strong><small>All systems active</small></span><span><strong>03</strong><small>Responders nearby</small></span><span><strong>00:42</strong><small>Last network pulse</small></span></div>
+        <span class="status-refresh" aria-label="Status updates every 42 seconds">↻ Live</span>
+      </section>
+
+      <section class="dashboard-grid section-pad" aria-label="Emergency dashboard">
+        <div class="panel sos-panel">
+          <div class="panel-header"><div><span class="section-kicker">Fast response</span><h2>Emergency SOS</h2></div><span class="live-badge"><span></span> Ready</span></div>
+          <p class="panel-description">Send your location and a preset alert to your emergency contacts. Use only when you need immediate help.</p>
+          <button class="sos-button" id="sos-button" type="button"><span class="sos-ring"></span><strong>SOS</strong><small>Tap to activate</small></button>
+          <div class="sos-meta"><span>⌖ Location sharing <strong>On</strong></span><span>◷ Contacts notified <strong>3</strong></span></div>
+        </div>
+        <div class="panel checkin-panel">
+          <div class="panel-header"><div><span class="section-kicker">Peace of mind</span><h2>Safety check-in</h2></div><span class="checkin-status" id="checkin-status">Not active</span></div>
+          <p class="panel-description">Let your circle know you’re okay. We’ll remind you before your timer ends.</p>
+          <div class="timer-display"><span id="timer-value">30:00</span><span>until check-in</span></div>
+          <div class="timer-progress"><span id="timer-progress"></span></div>
+          <div class="checkin-actions"><button class="button button-secondary" id="start-checkin" type="button">Start timer</button><button class="button button-safe" id="safe-button" type="button">✓ I’m safe</button><button class="text-button" id="cancel-checkin" type="button" disabled>Cancel</button></div>
+        </div>
+      </section>
+
+      <section class="quick-actions section-pad" aria-labelledby="quick-actions-title">
+        <div class="quick-heading"><span class="section-kicker">Instant access</span><h2 id="quick-actions-title">Emergency quick actions</h2><p>One tap to get where you need to go.</p></div>
+        <div class="quick-action-grid">
+          <a class="quick-action quick-call" href="tel:911"><span>✚</span><strong>Call emergency services</strong><small>911 · Immediate response</small><b>↗</b></a>
+          <button class="quick-action" id="quick-location" type="button"><span>⌖</span><strong>Share my location</strong><small>Private until you share it</small><b>↗</b></button>
+          <a class="quick-action" href="#contacts"><span>♧</span><strong>Open my contacts</strong><small>3 trusted people</small><b>↗</b></a>
+          <a class="quick-action" href="#resources"><span>♡</span><strong>View support resources</strong><small>Always within reach</small><b>↗</b></a>
+        </div>
+      </section>
+
+      <section class="content-grid section-pad" id="incidents">
+        <div class="panel incidents-panel">
+          <div class="panel-header"><div><span class="section-kicker">Live pulse</span><h2>Community activity <span class="count-pill" id="incident-count">4</span></h2></div><button class="button button-small button-secondary" id="report-incident" type="button">+ Report incident</button></div>
+          <div class="filters" role="group" aria-label="Filter incidents">
+            <label class="search-wrap"><span aria-hidden="true">⌕</span><input id="incident-search" type="search" placeholder="Search incidents" aria-label="Search incidents"></label>
+            <select id="category-filter" aria-label="Filter by category"><option value="all">All categories</option><option value="medical">Medical</option><option value="hazard">Hazard</option><option value="weather">Weather</option><option value="security">Security</option></select>
+            <select id="severity-filter" aria-label="Filter by severity"><option value="all">All severity</option><option value="high">High</option><option value="medium">Medium</option><option value="low">Low</option></select>
+          </div>
+          <div class="timeline-caption"><span class="timeline-line"></span><span>Most recent reports</span><span class="timeline-live"><i></i> Updating live</span></div>
+          <div class="incident-list" id="incident-list"></div>
+          <div class="empty-state" id="incident-empty" hidden>No incidents match those filters.</div>
+        </div>
+        <aside class="panel location-panel">
+          <div class="panel-header"><div><span class="section-kicker">Your signal</span><h2>Location sharing</h2></div><span class="live-badge"><span></span> Private</span></div>
+          <div class="location-visual"><div class="location-grid"></div><div class="location-pulse"></div><div class="location-marker">⌖</div><div class="location-card"><strong id="location-name">Location ready</strong><small id="location-detail">Share when you need support</small></div></div>
+          <button class="button button-secondary full-width" id="locate-button" type="button">Use my current location</button>
+          <p class="privacy-note">Your location is shared only during an active SOS or when you choose to report it.</p>
+        </aside>
+      </section>
+
+      <section class="content-grid section-pad" id="contacts">
+        <div class="panel contacts-panel">
+          <div class="panel-header"><div><span class="section-kicker">Your circle</span><h2>Emergency contacts</h2></div><button class="button button-small button-secondary" id="add-contact" type="button">+ Add contact</button></div>
+          <div class="contact-list" id="contact-list"></div>
+        </div>
+        <aside class="panel resources-panel" id="resources">
+          <div class="panel-header"><div><span class="section-kicker">Always within reach</span><h2>Emergency resources</h2></div><span class="resource-count">04</span></div>
+          <a class="resource-row" href="tel:911"><span class="resource-icon red">✚</span><span><strong>Emergency services</strong><small>Police, fire & medical</small></span><b>911</b></a>
+          <a class="resource-row" href="tel:988"><span class="resource-icon purple">♡</span><span><strong>Crisis support line</strong><small>Free, confidential support</small></span><b>988</b></a>
+          <a class="resource-row" href="tel:211"><span class="resource-icon teal">⌂</span><span><strong>Community support</strong><small>Local services & shelter</small></span><b>211</b></a>
+          <a class="resource-row" href="https://www.weather.gov/" target="_blank" rel="noreferrer"><span class="resource-icon blue">◒</span><span><strong>Weather alerts</strong><small>National Weather Service</small></span><b>↗</b></a>
+        </aside>
+      </section>
+    </main>
+    <footer class="footer section-pad"><span>© 2026 CrisisConnect</span><span>Built for calmer, safer communities.</span><button class="text-button danger-text" id="reset-demo" type="button">Reset demo data</button></footer>
+  </div>
+
+  <dialog class="modal" id="sos-modal" aria-labelledby="sos-title"><div class="modal-icon danger">!</div><h2 id="sos-title">Activate emergency SOS?</h2><p>This will share your current location and alert your emergency contacts. Only continue if you need immediate help.</p><div class="modal-actions"><button class="button button-ghost" data-close-modal type="button">Cancel</button><button class="button button-danger" id="confirm-sos" type="button">Yes, send alert</button></div></dialog>
+  <dialog class="modal" id="safe-modal" aria-labelledby="safe-title"><div class="modal-icon teal">✓</div><h2 id="safe-title">Let your circle know you’re safe?</h2><p>Your trusted contacts will see that you’ve checked in. This also clears any active check-in reminder.</p><div class="modal-actions"><button class="button button-ghost" data-close-modal type="button">Not yet</button><button class="button button-primary" id="confirm-safe" type="button">I’m safe</button></div></dialog>
+  <dialog class="modal" id="contact-modal" aria-labelledby="contact-title"><div class="modal-icon teal">+</div><h2 id="contact-title">Add emergency contact</h2><form id="contact-form"><label>Full name<input name="name" required minlength="2" autocomplete="name"></label><label>Relationship<input name="relationship" required minlength="2" placeholder="e.g. Partner, Neighbor"></label><label>Phone number<input name="phone" required type="tel" pattern="(?=(?:\D*\d){7,})[+0-9 ()-]+" title="Enter at least 7 digits" autocomplete="tel"></label><div class="modal-actions"><button class="button button-ghost" data-close-modal type="button">Cancel</button><button class="button button-primary" type="submit">Save contact</button></div></form></dialog>
+  <dialog class="modal" id="incident-modal" aria-labelledby="incident-title"><div class="modal-icon orange">⌁</div><h2 id="incident-title">Report an incident</h2><form id="incident-form"><label>What’s happening?<input name="title" required minlength="4" placeholder="Brief description"></label><div class="form-row"><label>Category<select name="category"><option value="medical">Medical</option><option value="hazard">Hazard</option><option value="weather">Weather</option><option value="security">Security</option></select></label><label>Severity<select name="severity"><option value="high">High</option><option value="medium" selected>Medium</option><option value="low">Low</option></select></label></div><label>Location<input name="location" required minlength="2" placeholder="e.g. Near Pine & 4th"></label><div class="modal-actions"><button class="button button-ghost" data-close-modal type="button">Cancel</button><button class="button button-primary" type="submit">Publish report</button></div></form></dialog>
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
