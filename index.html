@@ -20,6 +20,7 @@
       </a>
       <nav class="desktop-nav" aria-label="Main navigation">
         <a href="#overview" class="nav-link active">Overview</a>
+        <a href="#ai-assistant" class="nav-link">AI assistant</a>
         <a href="#incidents" class="nav-link">Incidents</a>
         <a href="#contacts" class="nav-link">Contacts</a>
         <a href="#resources" class="nav-link">Resources</a>
@@ -73,6 +74,32 @@
         <div class="network-beacon"><span class="beacon-core"></span><span class="beacon-ring ring-a"></span><span class="beacon-ring ring-b"></span></div>
         <div class="status-metrics"><span><i class="indicator-dot"></i><strong>Operational</strong><small>All systems active</small></span><span><strong>03</strong><small>Responders nearby</small></span><span><strong>00:42</strong><small>Last network pulse</small></span></div>
         <span class="status-refresh" aria-label="Status updates every 42 seconds">↻ Live</span>
+      </section>
+
+      <section class="ai-section section-pad" id="ai-assistant" aria-labelledby="ai-title">
+        <div class="ai-intro">
+          <div class="ai-orb" aria-hidden="true"><span>✦</span><i></i><i></i></div>
+          <div><span class="section-kicker">CrisisConnect AI</span><h2 id="ai-title">Turn a worried message into a clear next step.</h2><p>Describe what is happening in your own words. Our local guidance engine identifies signals, suggests immediate actions, and prepares a report you can save to your community feed.</p><span class="ai-disclaimer">AI-assisted guidance · informational only · never a replacement for emergency services</span></div>
+        </div>
+        <div class="ai-workspace">
+          <div class="ai-chat-panel">
+            <div class="ai-panel-top"><span class="ai-avatar">✦</span><span><strong>Safety guidance assistant</strong><small>Runs privately in your browser</small></span><span class="ai-private">Local AI</span></div>
+            <label class="ai-input-label" for="ai-input">What’s happening?</label>
+            <textarea id="ai-input" rows="5" maxlength="800" placeholder="Example: There is smoke in my apartment building and two people may be trapped upstairs."></textarea>
+            <div class="ai-input-footer"><span id="ai-character-count">0 / 800</span><button class="text-button" id="clear-ai" type="button">Clear</button></div>
+            <button class="button button-primary ai-analyze-button" id="analyze-ai" type="button"><span>✦</span> Analyze situation</button>
+            <div class="ai-examples"><span class="ai-examples-label">Try an example</span><div class="example-grid">
+              <button class="example-card" type="button" data-example="There is a fire in my building"><span class="example-icon fire">♨</span><span>Building fire</span><b>↗</b></button>
+              <button class="example-card" type="button" data-example="Someone has been seriously injured"><span class="example-icon medical">✚</span><span>Serious injury</span><b>↗</b></button>
+              <button class="example-card" type="button" data-example="I witnessed a road accident"><span class="example-icon accident">⌁</span><span>Road accident</span><b>↗</b></button>
+              <button class="example-card" type="button" data-example="I feel unsafe and someone is following me"><span class="example-icon crime">◈</span><span>Feeling unsafe</span><b>↗</b></button>
+              <button class="example-card" type="button" data-example="There is severe flooding in my area"><span class="example-icon flood">◒</span><span>Severe flooding</span><b>↗</b></button>
+            </div></div>
+          </div>
+          <div class="ai-results-panel" id="ai-results" aria-live="polite">
+            <div class="ai-empty"><span class="ai-empty-icon">✦</span><strong>Your guidance will appear here</strong><p>Start with a short description. CrisisConnect AI will organize the important details without sending anything automatically.</p></div>
+          </div>
+        </div>
       </section>
 
       <section class="dashboard-grid section-pad" aria-label="Emergency dashboard">

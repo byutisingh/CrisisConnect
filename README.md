@@ -20,6 +20,13 @@ CrisisConnect brings the most important actions into one focused experience: act
   - Three-second arming countdown
   - Clear sent state and notification feedback
 - Animated live network status panel with operational indicators
+- **CrisisConnect AI** local safety guidance engine:
+  - Natural-language emergency description analysis
+  - Medical, fire, crime, accident, natural-disaster, and other classification
+  - Critical, high, medium, and low urgency estimation
+  - Signal extraction for injuries, danger, people affected, and location cues
+  - Immediate-action guidance and an AI-assisted structured summary
+  - Five example scenarios and optional LocalStorage report saving
 - Community incident timeline with:
   - Medical, hazard, weather, and security categories
   - High, medium, and low severity levels
@@ -50,6 +57,8 @@ CrisisConnect brings the most important actions into one focused experience: act
   - `localStorage`
   - Geolocation API
   - Native `<dialog>`
+
+The AI assistant is a deterministic, private rule-based/NLP-style engine implemented in `script.js`. It does not call an external model, require an API key, claim to contact emergency services, or send location data.
 
 No frameworks, packages, build tools, external APIs, or backend services are required.
 
@@ -106,4 +115,3 @@ For a production deployment, the app would need secure authentication, encrypted
 - Localized emergency numbers, languages, and accessibility preferences
 - Encrypted event history and privacy controls
 - Community resilience resources, shelter capacity, and preparedness checklists
-
